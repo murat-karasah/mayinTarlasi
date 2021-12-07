@@ -55,7 +55,10 @@ namespace mayinTarlasi
         void btn_click(object sender, EventArgs e)
         {
             Button basilan = sender as Button;
-            label4.Text = mayin.ToString();
+                        label4.Text = mayin.ToString();
+            //farklı bir kullanım
+            //btn.tag=true değeri verilir eğer. satır 47
+            //bool mayinbuldunmu = (bool)basilan.Tag;
 
             if (basilan.Tag=="mayın")
             {
