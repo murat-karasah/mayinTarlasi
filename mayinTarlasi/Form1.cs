@@ -25,9 +25,9 @@ namespace mayinTarlasi
              skor = 50;
             flowLayoutPanel1.Controls.Clear();
             Random rnd = new Random();
-            int rnd1 = rnd.Next(1, 50);
-            int rnd2 = rnd.Next(1, 50);
-            int rnd3 = rnd.Next(1, 50);
+            int rnd1 = rnd.Next(1, 20);
+            int rnd2 = rnd.Next(21, 40);
+            int rnd3 = rnd.Next(41, 50);
 
             label2.Text = skor.ToString();
             label4.Text = mayin.ToString();
