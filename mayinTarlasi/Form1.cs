@@ -18,24 +18,19 @@ namespace mayinTarlasi
         }
         int mayin = 3;
         int skor = 50;
-
         public void button1_Click(object sender, EventArgs e)
         {
-             mayin = 3;
-             skor = 50;
+            mayin = 3;
+            skor = 50;
             flowLayoutPanel1.Controls.Clear();
             Random rnd = new Random();
             int rnd1 = rnd.Next(1, 20);
             int rnd2 = rnd.Next(21, 40);
             int rnd3 = rnd.Next(41, 50);
-
             label2.Text = skor.ToString();
             label4.Text = mayin.ToString();
-
-
             for (int i = 0; i < 50; i++)
             {
-
                 Button btn = new Button();
                 btn.Width = btn.Height = 68;
                 btn.Padding = new Padding(0);
@@ -46,23 +41,18 @@ namespace mayinTarlasi
                 {
                     btn.Tag = "mayın";
                 }
-                
-
             }
-
-
         }
         void btn_click(object sender, EventArgs e)
         {
             Button basilan = sender as Button;
-                        label4.Text = mayin.ToString();
+            label4.Text = mayin.ToString();
             //farklı bir kullanım
             //btn.tag=true değeri verilir eğer. satır 47
             //bool mayinbuldunmu = (bool)basilan.Tag;
 
             if (basilan.Tag=="mayın")
             {
-
                 MessageBox.Show("Mayını Buldunuz! Skor : " + skor, "Tebrikler!");
                 basilan.BackColor = Color.Red;
             }
@@ -70,7 +60,6 @@ namespace mayinTarlasi
             {
                 skor--;
                 label2.Text = skor.ToString();
-
                 basilan.BackColor = Color.Green;
             }
         }
